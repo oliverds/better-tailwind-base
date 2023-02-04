@@ -9,7 +9,7 @@ Better Tailwind Base is a <b>minimal baseline stylesheet</b> for any web project
 If you want to use this CSS directly in your project, simply download the stylesheet below and include the following in your HTML `head` section:
 
 ```
-<link rel="stylesheet" href="vanilla.css">
+<link rel="stylesheet" href="dist/better-base.css">
 ```
 
 ### Start the Tailwind CLI build process
