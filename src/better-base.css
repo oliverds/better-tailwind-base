@@ -22,7 +22,7 @@
     }
 
     h2 {
-        @apply text-2xl lg:text-2xl lg:leading-[1.33] mt-12 lg:mt-14 mb-6 lg:mb-8 font-bold;
+        @apply text-2xl lg:text-3xl lg:leading-[1.33] mt-12 lg:mt-14 mb-6 lg:mb-8 font-bold;
     }
 
     h3 {
