@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /* Typography */
+
+    body {
+        @apply bg-white dark:bg-gray-950 font-sans text-base lg:text-lg leading-[1.75] lg:leading-[1.77] text-gray-700 dark:text-gray-300 my-0 mx-auto max-w-3xl px-2;
+    }
+
+    p, img, figure {
+        @apply my-5 lg:my-6;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply text-gray-900 dark:text-white;
+    }
+
+    h1 {
+        @apply text-4xl lg:text-5xl leading-[1.11] lg:leading-[1] font-extrabold mb-8 lg:mb-10;
+    }
+
+    h2 {
+        @apply text-2xl lg:text-2xl lg:leading-[1.33] mt-12 lg:mt-14 mb-6 lg:mb-8 font-bold;
+    }
+
+    h3 {
+        @apply text-xl lg:text-2xl leading-[1.6] lg:leading-[1.5] mt-8 lg:mt-10 mb-3 lg:mb-4 font-semibold;
+    }
+
+    h4 {
+        @apply text-base lg:text-lg lg:leading-[1.55] mb-2 font-semibold;
+    }
+
+    h5, h6 {
+        @apply text-base lg:text-lg leading-[1.75];
+    }
+
+    header h1 {
+        @apply mt-16 lg:mt-20;
+    }
+
+    a {
+        @apply font-medium underline text-gray-900 dark:text-white;
+    }
+
+    time {
+        @apply font-bold;
+    }
+
+    em, dfn, i {
+        @apply italic;
+    }
+
+    blockquote, q {
+        @apply border-l-4 border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100 font-medium italic pl-4 lg:pl-[18px] my-6 lg:my-[30px];
+    }
+
+    blockquote, q {
+        quotes: "\\201C""\\201D""\\2018""\\2019";
+    }
+
+    blockquote p:first-child {
+        @apply mt-0;
+    }
+
+    blockquote p:last-child {
+        @apply mb-0;
+    }
+
+    blockquote p:first-of-type::before {
+        content: open-quote;
+    }
+
+    blockquote p:last-of-type::after {
+        content: close-quote;
+    }
+
+    kbd, code, samp, pre, var {
+        @apply text-sm lg:text-base leading-[1.71] lg:leading-[1.75];
+    }
+
+    code {
+        @apply font-semibold;
+    }
+
+    code::before, code::after {
+        content: '`';
+    }
+
+    pre {
+        @apply my-6 lg:my-8 px-4 lg:px-4 py-3 lg:py-5 overflow-auto rounded-md text-gray-200 dark:text-gray-300 bg-gray-800 dark:bg-[rgba(0,0,0,0.5)];
+    }
+
+    pre code::before, pre code::after {
+        content: '';
+    }
+
+    code pre, pre code {
+        @apply border-0 p-0 bg-transparent;
+    }
+
+    /* Elements */
+
+    hr {
+        @apply bg-gray-200 dark:bg-gray-700 border-0 h-px my-12 lg:my-14;
+    }
+
+    img {
+        @apply block h-auto max-w-full;
+    }
+
+    figure {
+        @apply inline-block w-full;
+    }
+
+    figure img {
+        @apply mx-auto my-0;
+    }
+
+    figure figcaption {
+        @apply text-sm lg:text-base mt-2 lg:mt-3 text-center;
+    }
+
+    ul, ol {
+        @apply pl-[26px] lg:pl-[28px];
+    }
+
+    ul {
+        @apply list-disc;
+    }
+
+    ol {
+        @apply list-decimal;
+    }
+
+    li {
+        @apply my-2 lg:my-3;
+    }
+
+    ul > li, ol > li {
+        @apply pl-1.5 lg:pl-2;
+    }
+
+    ul > li::marker {
+      @apply text-gray-300 dark:text-gray-600;
+    }
+
+    ol > li::marker {
+      @apply text-gray-500 dark:text-gray-400;
+    }
+
+    li > ul, li > ol {
+        @apply my-3 lg:my-4 pl-6 lg:pl-7;
+    }
+
+    li > ul li, li > ol li {
+        @apply mb-2;
+    }
+
+    dl dd {
+        @apply pl-8 lg:pl-10;
+    }
+
+    table {
+        @apply text-sm lg:text-base border-collapse table-auto lg:table-fixed text-left w-full;
+    }
+
+    table caption {
+        @apply my-6 mx-0;
+    }
+
+    table tr {
+        @apply border-b border-gray-200 dark:border-gray-700;
+    }
+
+    table thead {
+        @apply sticky top-0;
+    }
+
+    table tbody tr:nth-child(even) {
+        @apply bg-gray-100 dark:bg-gray-900;
+    }
+
+    table th {
+        @apply font-bold;
+    }
+
+    table th, table td {
+        @apply p-2 lg:p-3;
+    }
+
+    table th:first-child, table td:first-child {
+        @apply pl-1 lg:pl-1.5;
+    }
+
+    table th:last-child, table td:last-child {
+        @apply pr-1 lg:pr-1.5;
+    }
+
+    input {
+        @apply block border border-gray-900 my-2 mx-0 p-3 appearance-none focus:bg-gray-100 focus:text-blue-600 active:bg-gray-100 active:text-blue-600;
+    }
+}
+
